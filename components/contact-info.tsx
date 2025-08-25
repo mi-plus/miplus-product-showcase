@@ -7,7 +7,7 @@ import { MessageCircle, Phone, Mail, MapPin, Clock, Facebook, Instagram } from "
 export default function ContactInfo() {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Hi! I'd like to know more about MI+ products.")
-    window.open(`https://wa.me/1234567890?text=${message}`, "_blank")
+    window.open(`https://wa.me/+2349154614906?text=${message}`, "_blank")
   }
 
   const handleEmailClick = () => {
@@ -15,7 +15,7 @@ export default function ContactInfo() {
   }
 
   const handlePhoneClick = () => {
-    window.open("tel:+1234567890", "_blank")
+    window.open("tel:++2349154614906", "_blank")
   }
 
   const handleFacebookClick = () => {
@@ -81,7 +81,7 @@ export default function ContactInfo() {
                       className="border-[#6f888f] text-[#6f888f] hover:bg-[#6f888f] hover:text-white bg-transparent"
                     >
                       <Phone className="w-4 h-4 mr-2" />
-                      +1 (234) 567-8900
+                      (+234) 915 461 4906
                     </Button>
                   </div>
                 </div>
@@ -122,11 +122,11 @@ export default function ContactInfo() {
                   <div>
                     <h3 className="font-sans font-semibold text-lg mb-2">Visit Our Showroom</h3>
                     <p className="text-gray-600">
-                      123 Innovation Street
+                      26 saka oratan street, 
                       <br />
-                      Tech District, City 12345
+                      opposite NEPA office,
                       <br />
-                      United States
+                       ilufe road, Alaba international
                     </p>
                   </div>
                 </div>

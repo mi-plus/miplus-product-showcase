@@ -21,7 +21,7 @@ export function Footer() {
             <WhatsAppButton
               variant="outline"
               size="sm"
-              className="border-mi-primary text-mi-primary hover:bg-mi-primary hover:text-white"
+              className="border-mi-primary text-white hover:bg-mi-primary hover:text-white"
               message="Hi! I'd like to learn more about MI+ products."
             />
           </div>
@@ -45,11 +45,7 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-mi-primary transition-colors">
-                  About Us
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
@@ -58,32 +54,51 @@ export function Footer() {
             <h3 className="font-heading font-semibold text-lg mb-4">Categories</h3>
             <ul className="space-y-2 font-body text-sm">
               <li>
-                <Link href="/products?category=audio" className="text-gray-300 hover:text-mi-primary transition-colors">
-                  Audio
+                <Link
+                  href="/products?category=Home Theater"
+                  className="text-gray-300 hover:text-mi-primary transition-colors"
+                >
+                  Home Theater
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products?category=wearables"
+                  href="/products?category=Premium Home Theater"
                   className="text-gray-300 hover:text-mi-primary transition-colors"
                 >
-                  Wearables
+                  Premium Home Theater
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products?category=accessories"
+                  href="/products?category=Television"
                   className="text-gray-300 hover:text-mi-primary transition-colors"
                 >
-                  Accessories
+                  Television
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/products?category=electronics"
+                  href="/products?category=Soundbars"
                   className="text-gray-300 hover:text-mi-primary transition-colors"
                 >
-                  Electronics
+                  Soundbars
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products?category=Gaming Audio"
+                  className="text-gray-300 hover:text-mi-primary transition-colors"
+                >
+                  Gaming Audio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products?category=Multimedia Systems"
+                  className="text-gray-300 hover:text-mi-primary transition-colors"
+                >
+                  Multimedia Systems
                 </Link>
               </li>
             </ul>
@@ -95,7 +110,7 @@ export function Footer() {
             <ul className="space-y-3 font-body text-sm">
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-mi-primary" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+234 915 461 4906</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-mi-primary" />
@@ -104,11 +119,11 @@ export function Footer() {
               <li className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-mi-primary mt-0.5" />
                 <span className="text-gray-300">
-                  123 Business Ave
+                  26 saka oratan street,
                   <br />
-                  Suite 100
+                  opposite NEPA office,
                   <br />
-                  City, State 12345
+                  ilufe road, Alaba international
                 </span>
               </li>
             </ul>
@@ -117,7 +132,7 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="font-body text-sm text-gray-400 mb-4 md:mb-0">© 2024 MI+. All rights reserved.</p>
+          <p className="font-body text-sm text-gray-400 mb-4 md:mb-0">© 2025 MI+. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <Link
               href="https://www.facebook.com/share/1MyZsDBV7q/?mibextid=LQQJ4d"

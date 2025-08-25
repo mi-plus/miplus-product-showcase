@@ -32,7 +32,7 @@ export function HeroSection() {
               <WhatsAppButton
                 variant="outline"
                 size="lg"
-                className="border-mi-primary text-mi-primary hover:bg-mi-primary hover:text-white px-8 py-3"
+                className="border-mi-primary text-white hover:bg-mi-primary hover:text-white px-8 py-3"
                 message="Hi! I'd like to learn more about MI+ products."
               />
             </div>
@@ -42,7 +42,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-mi-primary/10 to-mi-secondary/10 rounded-2xl p-8 md:p-12">
               <Image
-                src="/mi-product-showcase.png"
+                src="/images/products/mila6005.jpg"
                 alt="MI+ Product Showcase"
                 width={400}
                 height={400}

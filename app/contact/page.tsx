@@ -22,7 +22,6 @@ export default function ContactPage() {
         <FAQ />
       </main>
       <Footer />
-      <WhatsAppButton />
     </div>
   )
 }
