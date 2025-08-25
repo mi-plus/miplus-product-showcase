@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-                <Image src="/images/mi-plus-logo.png" alt="MI+ Logo" width={40} height={40} className="w-20 h-20" />
+              <Image src="/images/mi-plus-logo.png" alt="MI+ Logo" width={56} height={56} className="w-28 h-28" />
             </div>
             <p className="font-body text-gray-300 mb-6 text-sm">
               Elevate your experience with our curated product collection. Quality, innovation, and style in every
@@ -44,7 +44,6 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
-              
             </ul>
           </div>
 

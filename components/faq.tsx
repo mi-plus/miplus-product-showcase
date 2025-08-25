@@ -5,18 +5,16 @@ import { ChevronDown, ChevronUp } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const faqs = [
-  
   {
     question: "Do you offer product warranties?",
     answer: "Yes we do. 12 months for sound system, 24 months for TV.",
   },
-  
+
   {
     question: "Do you provide delivery services?",
     answer: "No we don't.",
   },
- 
- 
+
   {
     question: "What if I need technical support?",
     answer: "Yes it can be provided at the location stated.",
@@ -75,7 +73,7 @@ export default function FAQ() {
           <button
             onClick={() => {
               const message = encodeURIComponent("Hi! I have a question that's not covered in your FAQ.")
-              window.open(`https://wa.me/+2349154614906?text=${message}`, "_blank")
+              window.open(`https://api.whatsapp.com/send?phone=2349154614906&text=${message}`, "_blank")
             }}
             className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 py-3 rounded-lg font-sans font-semibold transition-colors duration-200"
           >

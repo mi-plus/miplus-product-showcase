@@ -20,10 +20,19 @@ export default function WhatsAppButton({
   size = "default",
 }: WhatsAppButtonProps) {
   const handleWhatsAppClick = () => {
-    const encodedMessage = encodeURIComponent(message)
-    const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodedMessage}`
-    window.open(whatsappUrl, "_blank")
-  }
+  const cleanPhoneNumber = phoneNumber.replace(/[^0-9+]/g, ""); // Ensure proper format
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me/${cleanPhoneNumber}?text=${encodedMessage}`;
+
+  console.log("[v0] WhatsApp URL:", whatsappUrl); // Debug log
+  // Use a temporary link to open the URL
+  const link = document.createElement('a');
+  link.href = whatsappUrl;
+  link.target = '_blank';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <Button

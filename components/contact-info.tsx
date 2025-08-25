@@ -7,7 +7,7 @@ import { MessageCircle, Phone, Mail, MapPin, Clock, Facebook, Instagram } from "
 export default function ContactInfo() {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Hi! I'd like to know more about MI+ products.")
-    window.open(`https://wa.me/+2349154614906?text=${message}`, "_blank")
+    window.open(`https://api.whatsapp.com/send?phone=2349154614906&text=${message}`, "_blank")
   }
 
   const handleEmailClick = () => {
@@ -122,11 +122,11 @@ export default function ContactInfo() {
                   <div>
                     <h3 className="font-sans font-semibold text-lg mb-2">Visit Our Showroom</h3>
                     <p className="text-gray-600">
-                      26 saka oratan street, 
+                      26 saka oratan street,
                       <br />
                       opposite NEPA office,
                       <br />
-                       ilufe road, Alaba international
+                      ilufe road, Alaba international
                     </p>
                   </div>
                 </div>
