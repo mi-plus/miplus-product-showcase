@@ -1,8 +1,8 @@
 import { Navigation } from "@/components/navigation"
-import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { FeaturedProducts } from "@/components/featured-products"
 import { Footer } from "@/components/footer"
+import { HeroSection } from "@/components/hero-section"
 
 export default function HomePage() {
   return (
