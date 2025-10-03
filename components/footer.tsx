@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2">
               <Image
                 src="/images/mi-plus-logo.png"
                 alt="MI+ Logo"
@@ -21,8 +21,7 @@ export function Footer() {
               />
             </div>
             <p className="font-body text-gray-300 mb-6 text-sm">
-              Elevate your experience with our curated product collection.
-              Quality, innovation, and style in every product.
+              Don’t just hear it. Feel it. <br /> Don’t just watch it. Live it.
             </p>
             <WhatsAppButton
               variant="outline"
