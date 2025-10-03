@@ -1,15 +1,11 @@
-import { Navigation } from "@/components/navigation"
-import { ProductListing } from "@/components/product-listing"
-import { Footer } from "@/components/footer"
+import { ProductListing } from "@/components/product-listing";
 
 export default function ProductsPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <div className="pt-20 bg-white">
       <main>
         <ProductListing />
       </main>
-      <Footer />
     </div>
-  )
+  );
 }

@@ -1,25 +1,30 @@
-"use client"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
-import { Search, X } from "lucide-react"
+"use client";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import { Search, X } from "lucide-react";
 
 interface ProductFiltersProps {
   filters: {
-    categories: string[]
-    priceRange: [number, number]
-    rating: number
-    inStock: boolean
-    brands: string[]
-  }
-  onFiltersChange: (filters: any) => void
-  searchQuery: string
-  onSearchChange: (query: string) => void
+    categories: string[];
+    priceRange?: [number, number];
+    rating: number;
+    inStock: boolean;
+    brands: string[];
+  };
+  onFiltersChange: (filters: any) => void;
+  searchQuery: string;
+  onSearchChange: (query: string) => void;
 }
 
-export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearchChange }: ProductFiltersProps) {
+export function ProductFilters({
+  filters,
+  onFiltersChange,
+  searchQuery,
+  onSearchChange,
+}: ProductFiltersProps) {
   const categories = [
     "Home Theater",
     "Premium Home Theater",
@@ -29,8 +34,8 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
     "Stereo Systems",
     "Multimedia Systems",
     "Television",
-  ]
-  const brands = ["MI+"]
+  ];
+  const brands = ["MI+"];
 
   const safeFilters = {
     categories: filters?.categories || [],
@@ -38,25 +43,25 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
     rating: filters?.rating || 0,
     inStock: filters?.inStock || false,
     brands: filters?.brands || [],
-  }
+  };
 
   const updateFilters = (key: string, value: any) => {
-    onFiltersChange({ ...safeFilters, [key]: value })
-  }
+    onFiltersChange({ ...safeFilters, [key]: value });
+  };
 
   const toggleCategory = (category: string) => {
     const newCategories = safeFilters.categories.includes(category)
       ? safeFilters.categories.filter((c) => c !== category)
-      : [...safeFilters.categories, category]
-    updateFilters("categories", newCategories)
-  }
+      : [...safeFilters.categories, category];
+    updateFilters("categories", newCategories);
+  };
 
   const toggleBrand = (brand: string) => {
     const newBrands = safeFilters.brands.includes(brand)
       ? safeFilters.brands.filter((b) => b !== brand)
-      : [...safeFilters.brands, brand]
-    updateFilters("brands", newBrands)
-  }
+      : [...safeFilters.brands, brand];
+    updateFilters("brands", newBrands);
+  };
 
   const clearAllFilters = () => {
     onFiltersChange({
@@ -65,9 +70,9 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
       rating: 0,
       inStock: false,
       brands: [],
-    })
-    onSearchChange("")
-  }
+    });
+    onSearchChange("");
+  };
 
   return (
     <div className="space-y-6">
@@ -103,7 +108,9 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
                 checked={safeFilters.categories.includes(category)}
                 onCheckedChange={() => toggleCategory(category)}
               />
-              <Label htmlFor={category} className="font-body text-sm cursor-pointer">
+              <Label
+                htmlFor={category}
+                className="font-body text-sm cursor-pointer">
                 {category}
               </Label>
             </div>
@@ -123,7 +130,9 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
               checked={safeFilters.inStock}
               onCheckedChange={(checked) => updateFilters("inStock", checked)}
             />
-            <Label htmlFor="in-stock" className="font-body text-sm cursor-pointer">
+            <Label
+              htmlFor="in-stock"
+              className="font-body text-sm cursor-pointer">
               In Stock Only
             </Label>
           </div>
@@ -143,7 +152,9 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
                 checked={safeFilters.brands.includes(brand)}
                 onCheckedChange={() => toggleBrand(brand)}
               />
-              <Label htmlFor={brand} className="font-body text-sm cursor-pointer">
+              <Label
+                htmlFor={brand}
+                className="font-body text-sm cursor-pointer">
                 {brand}
               </Label>
             </div>
@@ -155,11 +166,10 @@ export function ProductFilters({ filters, onFiltersChange, searchQuery, onSearch
       <Button
         variant="outline"
         onClick={clearAllFilters}
-        className="w-full border-mi-secondary text-mi-secondary hover:bg-mi-secondary hover:text-white font-body bg-transparent"
-      >
+        className="w-full border-mi-secondary text-mi-secondary hover:bg-mi-secondary hover:text-white font-body bg-transparent">
         <X className="w-4 h-4 mr-2" />
         Clear All Filters
       </Button>
     </div>
-  )
+  );
 }
