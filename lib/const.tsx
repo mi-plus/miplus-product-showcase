@@ -2,9 +2,10 @@ export const ProductHeader: IProductHeaderProps[] = [
   {
     image: "/images/products/mila6005.jpg",
     title: "Discover the Essence of MI+",
-    description: `Elevate your experience with our curated product collection.
-              Crafted with precision, our products blend style and
-              functionality, making every moment exceptional.`,
+    description: `From cozy family movie nights,
+to intense solo gaming marathons,
+to unforgettable parties with friends…
+MI+ is there — amplifying every moment, every memory.`,
     cta: "Explore Products",
     link: "/products",
   },
