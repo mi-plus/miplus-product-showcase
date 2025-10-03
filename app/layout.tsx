@@ -20,8 +20,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "MI+ | Product Showcase",
-  description:
-    "Discover the Essence of MI+ - Elevate your experience with our curated product collection",
+  description: "MI+ - Create A Better Life",
   bookmarks: "Mi+",
   creator: "ISCE Digital Concept",
 };
