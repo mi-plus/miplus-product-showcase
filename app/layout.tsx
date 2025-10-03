@@ -22,7 +22,8 @@ export const metadata: Metadata = {
   title: "MI+ | Product Showcase",
   description:
     "Discover the Essence of MI+ - Elevate your experience with our curated product collection",
-  generator: "v0.app",
+  bookmarks: "Mi+",
+  creator: "ISCE Digital Concept",
 };
 
 export default function RootLayout({
