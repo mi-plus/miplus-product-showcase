@@ -4,9 +4,10 @@ import { Footer } from "@/components/footer";
 import { notFound } from "next/navigation";
 
 const products = [
+  // All your original audio products (IDs 1-21)
   {
     id: 1,
-    name: "MIL6080 Premium Home Theater System",
+    name: "MIL6080",
     images: [
       "/images/products/mil6080.png",
       "/images/products/mil6080.png",
@@ -32,7 +33,7 @@ const products = [
   },
   {
     id: 2,
-    name: "MIL6020B Digital Home Theater System",
+    name: "MIL6020B",
     images: [
       "/images/products/mil6020b.jpg",
       "/images/products/mil6020b.jpg",
@@ -58,7 +59,7 @@ const products = [
   },
   {
     id: 3,
-    name: "MILA4012 Compact Stereo System",
+    name: "MILA4012",
     images: [
       "/images/products/mila4012.jpg",
       "/images/products/mila4012.jpg",
@@ -84,7 +85,7 @@ const products = [
   },
   {
     id: 4,
-    name: "MILA6007 Complete Home Theater System",
+    name: "MILA6007",
     images: [
       "/images/products/mila6007.png",
       "/images/products/mila6007.png",
@@ -110,7 +111,7 @@ const products = [
   },
   {
     id: 5,
-    name: "MIL6090 RGB Gaming Audio System",
+    name: "MIL6090",
     images: [
       "/images/products/mil6090.jpg",
       "/images/products/mil6090.jpg",
@@ -136,7 +137,7 @@ const products = [
   },
   {
     id: 6,
-    name: "MIL6010B Blue LED Home Theater",
+    name: "MIL6010B",
     images: [
       "/images/products/mil6010b.jpg",
       "/images/products/mil6010b.jpg",
@@ -162,7 +163,7 @@ const products = [
   },
   {
     id: 7,
-    name: "MILS505 Soundbar Collection",
+    name: "MILS505",
     images: [
       "/images/products/mils505.jpg",
       "/images/products/mils505.jpg",
@@ -186,7 +187,7 @@ const products = [
   },
   {
     id: 8,
-    name: "MIL6060 Colorful LED Audio System",
+    name: "MIL6060",
     images: [
       "/images/products/mil6060.png",
       "/images/products/mil6060.png",
@@ -212,7 +213,7 @@ const products = [
   },
   {
     id: 9,
-    name: "MIL6030B Teal LED Home Theater",
+    name: "MIL6030B",
     images: [
       "/images/products/mil6030b.jpg",
       "/images/products/mil6030b.jpg",
@@ -238,7 +239,7 @@ const products = [
   },
   {
     id: 10,
-    name: "MILA6005 Tower Entertainment System",
+    name: "MILA6005",
     images: [
       "/images/products/mila6005.jpg",
       "/images/products/mila6005.jpg",
@@ -262,9 +263,9 @@ const products = [
       "Box Size": "L415*W375*H390",
     },
   },
-    {
+  {
     id: 11,
-    name: "MIM6085 Rainbow LED Entertainment System",
+    name: "MIM6085",
     images: [
       "/images/products/mim6085.jpg",
       "/images/products/mim6085.jpg",
@@ -290,7 +291,7 @@ const products = [
   },
   {
     id: 12,
-    name: "MIM662 Multimedia Entertainment Center",
+    name: "MIM662",
     images: [
       "/images/products/mim662.jpg",
       "/images/products/mim662.jpg",
@@ -316,7 +317,7 @@ const products = [
   },
   {
     id: 13,
-    name: "MIM602 Blue Ring Multimedia System",
+    name: "MIM602",
     images: [
       "/images/products/mim602.jpg",
       "/images/products/mim602.jpg",
@@ -342,7 +343,7 @@ const products = [
   },
   {
     id: 14,
-    name: "MIG805S Premium Tower Home Theater",
+    name: "MIG805S",
     images: [
       "/images/products/mig805s.jpg",
       "/images/products/mig805s.jpg",
@@ -368,7 +369,7 @@ const products = [
   },
   {
     id: 15,
-    name: "MIG813S LED Ring Tower System",
+    name: "MIG813S",
     images: [
       "/images/products/mig813s.jpg",
       "/images/products/mig813s.jpg",
@@ -394,7 +395,7 @@ const products = [
   },
   {
     id: 16,
-    name: "MIG815S Professional RGB Tower System",
+    name: "MIG815S",
     images: [
       "/images/products/mig815s.jpg",
       "/images/products/mig815s.jpg",
@@ -420,7 +421,7 @@ const products = [
   },
   {
     id: 17,
-    name: "MIM6530B-H Blue LED Tower System",
+    name: "MIM6530B-H",
     images: [
       "/images/products/mim6530b-h.jpg",
       "/images/products/mim6530b-h.jpg",
@@ -446,7 +447,7 @@ const products = [
   },
   {
     id: 18,
-    name: "MIM6065 Advanced Colorful LED System",
+    name: "MIM6065",
     images: [
       "/images/products/mim6065.jpg",
       "/images/products/mim6065.jpg",
@@ -472,7 +473,7 @@ const products = [
   },
   {
     id: 19,
-    name: "MIM663 Enhanced Rainbow Ring System",
+    name: "MIM663",
     images: [
       "/images/products/mim663a.jpg",
       "/images/products/mim663a.jpg",
@@ -498,7 +499,7 @@ const products = [
   },
   {
     id: 20,
-    name: "MIMA6508-H Green Ring Tower System",
+    name: "MIMA6508-H",
     images: [
       "/images/products/mima6508h.jpg",
       "/images/products/mima6508h.jpg",
@@ -524,7 +525,7 @@ const products = [
   },
   {
     id: 21,
-    name: "MIG803S Blue LED Tower Home Theater",
+    name: "MIG803S",
     images: [
       "/images/products/mig803s.jpg",
       "/images/products/mig803s.jpg",
@@ -548,9 +549,10 @@ const products = [
       "Box Size": "L468*W398*H400",
     },
   },
+  
   {
     id: 22,
-    name: "65T1 Mountain Series Ultra HD TV",
+    name: "MI-S32T1A",
     images: [
       "/images/products/65t1-mountain.jpg",
       "/images/products/65t1-mountain.jpg",
@@ -559,23 +561,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "32-inch HD TV",
     features: [
-      "65-inch Ultra HD 4K display",
-      "Smart TV connectivity",
-      "HDR support for vivid colors",
-      "Multiple HDMI and USB ports",
-      "Sleek modern stand design",
-      "Energy-efficient LED backlight",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "65 inches",
-      "Display Type": "LED with HDR support",
-      "Smart Features": "Built-in Wi-Fi, streaming apps",
-    },
+      "System Type": "32-inch HD TV",
+      "TV Signal": "DVB-T2/DVB-S2",
+      "Panel Size": "32\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "60W",
+      "Carton Size": "780*120*512mm",
+      "Resolution": "HD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "180 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 23,
-    name: "75T1 Abstract Series Ultra HD TV",
+    name: "MI-S40T1AX",
     images: [
       "/images/products/75t1-abstract.jpg",
       "/images/products/75t1-abstract.jpg",
@@ -584,23 +592,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "40-inch HD TV",
     features: [
-      "75-inch premium Ultra HD display",
-      "Advanced color technology",
-      "Smart TV platform",
-      "Multiple connectivity options",
-      "Premium build quality",
-      "Enhanced audio system",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "75 inches",
-      "Display Type": "Premium LED with advanced color",
-      "Smart Features": "Advanced smart platform, streaming",
-    },
+      "System Type": "40-inch HD TV",
+      "TV Signal": "DVB-T2/DVB-S2",
+      "Panel Size": "40\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "90W",
+      "Carton Size": "892*87*507mm",
+      "Resolution": "HD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "200 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 24,
-    name: "MIG9050 Ultimate Tower Home Theater System",
+    name: "MIG9050",
     images: [
       "/images/products/mig9050s.jpg",
       "/images/products/mig9050s.jpg",
@@ -626,7 +640,7 @@ const products = [
   },
   {
     id: 25,
-    name: "85T1 Balloon Series Ultra HD TV",
+    name: "MI-S43N1A-X",
     images: [
       "/images/products/85t1-balloons.jpg",
       "/images/products/85t1-balloons.jpg",
@@ -635,23 +649,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "43-inch FHD TV",
     features: [
-      "Massive 85-inch display",
-      "Cinema-quality 4K resolution",
-      "Large format viewing experience",
-      "Comprehensive smart features",
-      "Premium stand design",
-      "Advanced connectivity options",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "85 inches",
-      "Display Type": "Large format LED with HDR",
-      "Smart Features": "Comprehensive smart platform",
-    },
+      "System Type": "43-inch FHD TV",
+      "TV Signal": "DVB-T2/DVB-S2",
+      "Panel Size": "43\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "90W",
+      "Carton Size": "1105*125*675mm",
+      "Resolution": "FHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "200 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 26,
-    name: "75T1 Mountain Series Ultra HD TV",
+    name: "MI-W43T1H",
     images: [
       "/images/products/75t1-mountain.jpg",
       "/images/products/75t1-mountain.jpg",
@@ -660,23 +680,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "43-inch FHD TV",
     features: [
-      "75-inch 4K Ultra HD display",
-      "Natural color reproduction",
-      "Mountain series design",
-      "Smart connectivity features",
-      "Immersive viewing experience",
-      "Modern aesthetic appeal",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "75 inches",
-      "Display Type": "LED with natural color tech",
-      "Smart Features": "Smart platform with apps",
-    },
+      "System Type": "43-inch FHD TV",
+      "TV Signal": "TV/DVB-T2/DVB-S2",
+      "Panel Size": "43\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "90W",
+      "Carton Size": "1060*125*655mm",
+      "Resolution": "FHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "200 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 27,
-    name: "65T1 Venice Series Smart Television",
+    name: "MI-W43T1X",
     images: [
       "/images/products/65t1-venice.jpg",
       "/images/products/65t1-venice.jpg",
@@ -685,23 +711,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "43-inch FHD TV",
     features: [
-      "Elegant 65-inch display",
-      "Venice series sophistication",
-      "Smart television features",
-      "Classic-inspired design",
-      "Premium viewing quality",
-      "Sophisticated aesthetics",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "65 inches",
-      "Display Type": "LED with sophisticated processing",
-      "Smart Features": "Smart platform with streaming",
-    },
+      "System Type": "43-inch FHD TV",
+      "TV Signal": "TV/ATV/DVB.T2/DVB.S2",
+      "Panel Size": "43\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "90W",
+      "Carton Size": "1060*125*655mm",
+      "Resolution": "FHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "200 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 28,
-    name: "MIGS1801W Professional Soundbar System",
+    name: "MIGS1801W",
     images: [
       "/images/products/migs1801w.jpg",
       "/images/products/migs1801w.jpg",
@@ -726,7 +758,7 @@ const products = [
   },
   {
     id: 29,
-    name: "55T1-A12 Abstract Series Smart TV",
+    name: "MI-W50T1X",
     images: [
       "/images/products/55t1-a12.jpg",
       "/images/products/55t1-a12.jpg",
@@ -735,23 +767,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "50-inch UHD TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Abstract series design aesthetics",
-      "Smart TV platform with apps",
-      "Vibrant color reproduction",
-      "Modern contemporary styling",
-      "Energy-efficient LED technology",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with vibrant color tech",
-      "Smart Features": "Smart platform with streaming apps",
-    },
+      "System Type": "50-inch UHD TV",
+      "TV Signal": "TV/ATV/DVB.T2/S2/VIDAA/WEBOS/whale TV",
+      "Panel Size": "50\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "108W",
+      "Carton Size": "1195*113*730mm",
+      "Resolution": "UHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "230 cd/m²",
+      "Connectivity": "Tuner/HDMI/VA/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 30,
-    name: "55T1-B10 Voice Control Smart TV",
+    name: "MI-W55T1X",
     images: [
       "/images/products/55t1-b10-voice.jpg",
       "/images/products/55t1-b10-voice.jpg",
@@ -760,24 +798,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "55-inch UHD TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Integrated voice control system",
-      "Hands-free operation",
-      "Smart TV with voice commands",
-      "Advanced connectivity options",
-      "Premium audio integration",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with voice control integration",
-      "Smart Features": "Voice control, smart platform, streaming",
-      "Voice Control": "Built-in voice recognition system",
-    },
+      "System Type": "55-inch UHD TV",
+      "TV Signal": "TV/ATV/DVB.T2/S2/VIDAA/WEBOS/whale TV",
+      "Panel Size": "55\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "138W",
+      "Carton Size": "1315*118*805mm",
+      "Resolution": "UHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "250 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 31,
-    name: "55T1-T5 Steel Stand Smart TV",
+    name: "MI-W65T1X",
     images: [
       "/images/products/55t1-t5-steel.jpg",
       "/images/products/55t1-t5-steel.jpg",
@@ -786,24 +829,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "65-inch UHD TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Premium steel tube stand design",
-      "Tropical series aesthetics",
-      "Robust construction",
-      "Smart TV functionality",
-      "Stable steel base design",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with tropical color enhancement",
-      "Smart Features": "Smart platform with apps",
-      "Stand Design": "Premium steel tube construction",
-    },
+      "System Type": "65-inch UHD TV",
+      "TV Signal": "TV/ATV/DVB.T2/S2/VIDAA/WEBOS/whale TV",
+      "Panel Size": "65\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "138W",
+      "Carton Size": "1560*133*945mm",
+      "Resolution": "UHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "250 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 32,
-    name: "55T1-B1 Eagle Series Smart TV",
+    name: "MI-W75T1X",
     images: [
       "/images/products/55t1-b1.jpg",
       "/images/products/55t1-b1.jpg",
@@ -812,23 +860,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "75-inch UHD TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Eagle series nature-inspired design",
-      "Majestic viewing experience",
-      "Smart TV platform",
-      "Premium build quality",
-      "Nature-enhanced color processing",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with nature color enhancement",
-      "Smart Features": "Smart platform with streaming",
-    },
+      "System Type": "75-inch UHD TV",
+      "TV Signal": "TV/ATV/DVB.T2/S2/VIDAA/WEBOS/whale TV",
+      "Panel Size": "75\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "168W",
+      "Carton Size": "1784*148*1045mm",
+      "Resolution": "UHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "280 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 33,
-    name: "55T1-A13 Forest Series Smart TV",
+    name: "MI-W85T1X",
     images: [
       "/images/products/55t1-a13.jpg",
       "/images/products/55t1-a13.jpg",
@@ -837,24 +891,29 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "85-inch UHD TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Forest series eco-inspired design",
-      "Natural color reproduction",
-      "Smart TV with eco features",
-      "Forest-themed aesthetics",
-      "Energy-efficient operation",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with natural color processing",
-      "Smart Features": "Eco-smart platform with apps",
-      "Eco Features": "Energy-efficient, eco-friendly materials",
-    },
+      "System Type": "85-inch UHD TV",
+      "TV Signal": "TV/ATV/DVB.T2/S2/VIDAA/WEBOS/whale TV",
+      "Panel Size": "85\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "198W",
+      "Carton Size": "2008*148*1170mm",
+      "Resolution": "UHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "300 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
     id: 34,
-    name: "55T1-A25 Minimalist Smart TV",
+    name: "MI-V55T1",
     images: [
       "/images/products/55t1-a25.jpg",
       "/images/products/55t1-a25.jpg",
@@ -863,23 +922,30 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "55-inch UHD/4K TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Minimalist design aesthetics",
-      "Single-button operation",
-      "Clean modern styling",
-      "Streamlined smart features",
-      "Elegant simplicity",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV",
+      "Voice remote control"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with minimalist processing",
-      "Smart Features": "Streamlined smart platform",
-    },
+      "System Type": "55-inch UHD/4K TV",
+      "TV Signal": "DVB-T2/DVB-S2/ATV",
+      "Panel Size": "55\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "135W",
+      "Carton Size": "1315*118*805mm",
+      "Resolution": "UHD/4K",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "270 cd/m²",
+      "Connectivity": "COAX/RJ45/USB/(Mini)CVBS/AUDIO IN/HDMI/ATV/DVT-T/C/T2/DVT-S/S2/EARPHONE OUT"
+    }
   },
   {
     id: 35,
-    name: "55T1-B10 Arctic Series Smart TV",
+    name: "MI-V50T1",
     images: [
       "/images/products/55t1-b10-public.jpg",
       "/images/products/55t1-b10-public.jpg",
@@ -888,24 +954,31 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "50-inch UHD Smart TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Arctic series cool design",
-      "Cool color processing technology",
-      "Premium smart features",
-      "Arctic-inspired aesthetics",
-      "Refreshing visual experience",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV",
+      "Voice remote control"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with cool color enhancement",
-      "Smart Features": "Premium smart platform with apps",
-      "Color Processing": "Arctic-inspired cool tones",
-    },
+      "System Type": "50-inch UHD Smart TV",
+      "TV Signal": "DVB-T2/DVB-S2",
+      "Panel Size": "50\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "135W",
+      "Carton Size": "1195*113*730mm",
+      "Resolution": "UHD/4K",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "270 cd/m²",
+      "Connectivity": "COAX/RJ45/USB/(Mini)CVBS/AUDIO IN/HDMI/ATV/DVT-T/C/T2/DVT-S/S2/EARPHONE OUT",
+      "Remote Control": "Voice remote control"
+    }
   },
   {
     id: 36,
-    name: "55T1-T5 Lake Reflection Smart TV",
+    name: "MI-V65T1",
     images: [
       "/images/products/55t1-t5-lake.jpg",
       "/images/products/55t1-t5-lake.jpg",
@@ -914,24 +987,30 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "65-inch UHD/4K TV",
     features: [
-      "55-inch 4K Ultra HD display",
-      "Lake reflection series design",
-      "Tranquil viewing experience",
-      "Reflection processing technology",
-      "Peaceful aesthetics",
-      "Serene color enhancement",
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV",
+      "Voice remote control"
     ],
     specifications: {
-      "Screen Size": "55 inches",
-      "Display Type": "LED with reflection processing",
-      "Smart Features": "Tranquil smart platform",
-      "Special Processing": "Lake reflection color technology",
-    },
+      "System Type": "65-inch UHD/4K TV",
+      "TV Signal": "DVB-T2/DVB-S2/ATV",
+      "Panel Size": "65\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "180W",
+      "Carton Size": "1560*133*945mm",
+      "Resolution": "UHD/4K",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "270 cd/m²",
+      "Connectivity": "COAX/RJ45/USB/(Mini)CVBS/AUDIO IN/HDMI/ATV/DVT-T/C/T2/DVT-S/S2/EARPHONE OUT"
+    }
   },
   {
     id: 37,
-    name: "55T1-B1 Eagle Series Public Model",
+    name: "MI-V75T1",
     images: [
       "/images/products/55t1-b1-public.jpg",
       "/images/products/55t1-b1-public.jpg",
@@ -958,7 +1037,7 @@ const products = [
   },
     {
     id: 38,
-    name: "MIL401 Bluetooth Speaker System",
+    name: "MIL401",
     images: [
       "/product img/product img/2.1 Home Theater MIL401.jpg",
       "/product img/product img/2.1 Home Theater MIL401.jpg",
@@ -1238,10 +1317,221 @@ const products = [
       "Display Type": "LED Music TV",
       "Connectivity": "HDMI, USB",
       "Power Supply": "AC/DC"
-    },
+    }
   },
   {
     id: 49,
+    name: "MI-F55T06M",
+    images: [
+      "/TV/TV/Image_20251023123923_497_11.jpg",
+      "/TV/TV/Image_20251023123923_497_11.jpg",
+      "/TV/TV/Image_20251023123923_497_11.jpg",
+    ],
+    category: "Television",
+    brand: "MI+",
+    inStock: true,
+    description: "55-inch 4K Interactive Display",
+    features: [
+      "A grade panel",
+      "Infrared touch screen",
+      "Explosion-proof toughened glass",
+      "40 points multi-touch",
+      "Quad core processor"
+    ],
+    specifications: {
+      "System Type": "55-inch 4K Interactive Display",
+      "Panel Grade": "A grade",
+      "Effective Display Area": "1209.6(H)X680.4(V)mm",
+      "Resolution": "3840X2160(4k)",
+      "Brightness": ">250 cd/m²",
+      "Color Gamut": "72% NTSC",
+      "Contrast": "4000:1",
+      "Viewing Angle": "178°(H)/178°(V)",
+      "Touch Type": "Infrared touch",
+      "Touch Points": "40 points",
+      "Processor": "Quad core ARM Cortex-A73*4@1.5GHz",
+      "Speaker": "8Ω/10W × 2",
+      "Power Consumption": "≤180W",
+      "Product Size": "1257.6*84*743.6mm",
+      "Package Size": "1358*175*855mm"
+    }
+  },
+  {
+    id: 50,
+    name: "MI-V85T1",
+    images: [
+      "/TV/TV/MI-Y32K6A.jpg",
+      "/TV/TV/MI-Y32K6A.jpg",
+      "/TV/TV/MI-Y32K6A.jpg",
+    ],
+    category: "Television",
+    brand: "MI+",
+    inStock: true,
+    description: "85-inch UHD/4K TV",
+    features: [
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV",
+      "Voice remote control"
+    ],
+    specifications: {
+      "System Type": "85-inch UHD/4K TV",
+      "TV Signal": "DVB-T2/DVB-S2",
+      "Panel Size": "85\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "300W",
+      "Carton Size": "2008*148*1170mm",
+      "Resolution": "UHD/4K",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "300 cd/m²",
+      "Connectivity": "COAX/RJ45/USB/(Mini)CVBS/AUDIO IN/HDMI/ATV/DVT-T/C/T2/DVT-S/S2/EARPHONE OUT"
+    }
+  },
+  {
+    id: 51,
+    name: "MI-F65T09M",
+    images: [
+      "/TV/TV/MI-S32T1A.jpg",
+      "/TV/TV/MI-S32T1A.jpg",
+      "/TV/TV/MI-S32T1A.jpg",
+    ],
+    category: "Television",
+    brand: "MI+",
+    inStock: true,
+    description: "65-inch 4K Interactive Display",
+    features: [
+      "A grade panel",
+      "Infrared touch screen",
+      "Explosion-proof toughened glass",
+      "40 points multi-touch",
+      "Quad core processor"
+    ],
+    specifications: {
+      "System Type": "65-inch 4K Interactive Display",
+      "Panel Grade": "A grade",
+      "Effective Display Area": "1428.48(H)x803.52(V)mm",
+      "Resolution": "3840X2160(4k)",
+      "Brightness": ">300 cd/m²",
+      "Color Gamut": "72% NTSC",
+      "Contrast": "4000:1",
+      "Viewing Angle": "178°(H)/178°(V)",
+      "Touch Type": "Infrared touch",
+      "Touch Points": "40 points",
+      "Processor": "Quad core ARM Cortex-A73*4@1.5GHz",
+      "Speaker": "8Ω/15W × 2",
+      "Power Consumption": "≤220W",
+      "Product Size": "1485.01*120.2*877.58mm",
+      "Package Size": "1605*200*1020mm"
+    }
+  },
+  {
+    id: 52,
+    name: "MI-F75T09M",
+    images: [
+      "/TV/TV/MI-S43T1MXW.jpg",
+      "/TV/TV/MI-S43T1MXW.jpg",
+      "/TV/TV/MI-S43T1MXW.jpg",
+    ],
+    category: "Television",
+    brand: "MI+",
+    inStock: true,
+    description: "75-inch 4K Interactive Display",
+    features: [
+      "A grade panel",
+      "Infrared touch screen",
+      "Explosion-proof toughened glass",
+      "40 points multi-touch",
+      "Quad core processor"
+    ],
+    specifications: {
+      "System Type": "75-inch 4K Interactive Display",
+      "Panel Grade": "A grade",
+      "Effective Display Area": "1650.24(H)X928.26(V)mm",
+      "Resolution": "3840X2160(4k)",
+      "Brightness": ">300 cd/m²",
+      "Color Gamut": "72% NTSC",
+      "Contrast": "4000:1",
+      "Viewing Angle": "178°(H)/178°(V)",
+      "Touch Type": "Infrared touch",
+      "Touch Points": "40 points",
+      "Processor": "Quad core ARM Cortex-A73*4@1.5GHz",
+      "Speaker": "8Ω/15W × 2",
+      "Power Consumption": "≤320W",
+      "Product Size": "1707.16*120.43*1012.72mm",
+      "Package Size": "1830*200*1142mm"
+    }
+  },
+  {
+    id: 53,
+    name: "MI-F86T09M",
+    images: [
+      "/TV/TV/TV-S65T1V.jpg",
+      "/TV/TV/TV-S65T1V.jpg",
+      "/TV/TV/TV-S65T1V.jpg",
+    ],
+    category: "Television",
+    brand: "MI+",
+    inStock: true,
+    description: "86-inch 4K Interactive Display",
+    features: [
+      "A grade panel",
+      "Infrared touch screen",
+      "Explosion-proof toughened glass",
+      "40 points multi-touch",
+      "Quad core processor"
+    ],
+    specifications: {
+      "System Type": "86-inch 4K Interactive Display",
+      "Panel Grade": "A grade",
+      "Effective Display Area": "1895.04(H)X1065.96(V)mm",
+      "Resolution": "3840X2160(4k)",
+      "Brightness": ">300 cd/m²",
+      "Color Gamut": "72% NTSC",
+      "Contrast": "4000:1",
+      "Viewing Angle": "178°(H)/178°(V)",
+      "Touch Type": "Infrared touch",
+      "Touch Points": "40 points",
+      "Processor": "Quad core ARM Cortex-A73*4@1.5GHz",
+      "Speaker": "8Ω/15W × 2",
+      "Power Consumption": "≤400W",
+      "Product Size": "1953.36*120.4*1151.42mm",
+      "Package Size": "2076*200*1294mm"
+    }
+  },
+  {
+    id: 54,
+    name: "MI-D26S19C",
+    images: [
+      "/TV/TV/MI-A23S195.png",
+      "/TV/TV/MI-A23S195.png",
+      "/TV/TV/MI-A23S195.png",
+    ],
+    category: "Television",
+    brand: "MI+",
+    inStock: true,
+    description: "19-inch HD TV",
+    features: [
+      "Louder Speaker",
+      "Overvoltage Protection",
+      "AC/DC",
+      "Music TV"
+    ],
+    specifications: {
+      "System Type": "19-inch HD TV",
+      "TV Signal": "DVB-T2/DC/AC",
+      "Panel Size": "19\"",
+      "Speaker": "2*8W",
+      "Power Consumption": "28W",
+      "Carton Size": "615*95*405mm",
+      "Resolution": "HD",
+      "Viewing Angle": "170º/170º",
+      "Brightness": "150 cd/m²",
+      "Connectivity": "Tuner*1/HDMI*1/AV*1/USB*1/VGA*1/Headphones*1/Coaxial*1"
+    }
+  },
+  {
+    id: 55,
     name: "MI-D32F1MC",
     images: [
       "/TV/TV/MI-D32F1MC.jpg",
@@ -1251,23 +1541,28 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "32-inch HD TV",
     features: [
-      "32-inch FHD Display",
-      "Frameless Design",
-      "3x HDMI Ports",
-      "USB Connectivity",
-      "Full HD Resolution",
-      "Slim Bezels"
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "32 inches",
-      "Display Type": "FHD Frameless LED",
-      "HDMI Ports": "3",
-      "Resolution": "1920x1080 Full HD"
-    },
+      "System Type": "32-inch HD TV",
+      "TV Signal": "Analog TV",
+      "Panel Size": "32\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "60W",
+      "Carton Size": "780*120*512mm",
+      "Resolution": "HD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "180 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
-    id: 50,
+    id: 56,
     name: "MI-Y32K6A",
     images: [
       "/TV/TV/MI-Y32K6A.jpg",
@@ -1277,100 +1572,56 @@ const products = [
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "32-inch HD TV",
     features: [
-      "32-inch FHD Display",
-      "Frameless Design",
-      "3x HDMI Ports",
-      "USB Connectivity",
-      "Full HD Resolution",
-      "Modern Aesthetics"
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "32 inches",
-      "Display Type": "FHD Frameless LED",
-      "HDMI Ports": "3",
-      "Resolution": "1920x1080 Full HD"
-    },
+      "System Type": "32-inch HD TV",
+      "TV Signal": "Analog TV",
+      "Panel Size": "32\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "60W",
+      "Carton Size": "780*120*512mm",
+      "Resolution": "HD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "180 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   },
   {
-    id: 51,
-    name: "MI-S32T1A",
+    id: 57,
+    name: "MI-D43F1MC",
     images: [
-      "/TV/TV/MI-S32T1A.jpg",
-      "/TV/TV/MI-S32T1A.jpg",
-      "/TV/TV/MI-S32T1A.jpg",
+      "/TV/TV/Image_20251023123901_496_11.jpg",
+      "/TV/TV/Image_20251023123901_496_11.jpg",
+      "/TV/TV/Image_20251023123901_496_11.jpg",
     ],
     category: "Television",
     brand: "MI+",
     inStock: true,
+    description: "43-inch FHD TV",
     features: [
-      "32-inch SMART TV",
-      "Wisdom Share Feature",
-      "FHD Resolution",
-      "Frameless Design",
-      "3x HDMI Ports",
-      "USB Connectivity"
+      "Louder Speaker",
+      "Super bright",
+      "Overvoltage Protection",
+      "Music TV"
     ],
     specifications: {
-      "Screen Size": "32 inches",
-      "Display Type": "SMART FHD Frameless",
-      "Smart Features": "Wisdom Share",
-      "HDMI Ports": "3"
-    },
-  },
-  {
-    id: 52,
-    name: "MI-S43T1MXW",
-    images: [
-      "/TV/TV/MI-S43T1MXW.jpg",
-      "/TV/TV/MI-S43T1MXW.jpg",
-      "/TV/TV/MI-S43T1MXW.jpg",
-    ],
-    category: "Television",
-    brand: "MI+",
-    inStock: true,
-    features: [
-      "43-inch SMART TV",
-      "WhaleOS Operating System",
-      "FHD Resolution",
-      "Frameless Design",
-      "3x HDMI Ports",
-      "USB Connectivity"
-    ],
-    specifications: {
-      "Screen Size": "43 inches",
-      "Display Type": "SMART FHD Frameless",
-      "Operating System": "WhaleOS",
-      "HDMI Ports": "3"
-    },
-  },
-  {
-    id: 53,
-    name: "MI-S65T1V",
-    images: [
-      "/TV/TV/TV-S65T1V.jpg",
-      "/TV/TV/TV-S65T1V.jpg",
-      "/TV/TV/TV-S65T1V.jpg",
-    ],
-    category: "Television",
-    brand: "MI+",
-    inStock: true,
-    features: [
-      "65-inch SMART UHD TV",
-      "VIDAA Operating System",
-      "Ultra HD Resolution",
-      "Frameless Design",
-      "3x HDMI Ports",
-      "USB Connectivity",
-      "Mirror Cast Feature"
-    ],
-    specifications: {
-      "Screen Size": "65 inches",
-      "Display Type": "SMART UHD Frameless",
-      "Operating System": "VIDAA",
-      "Resolution": "3840x2160 4K UHD",
-      "Special Features": "Mirror Cast"
-    },
+      "System Type": "43-inch FHD TV",
+      "TV Signal": "Analog TV",
+      "Panel Size": "43\"",
+      "Speaker": "2*10W",
+      "Power Consumption": "90W",
+      "Carton Size": "1105*125*675mm",
+      "Resolution": "FHD",
+      "Viewing Angle": "178º/178º",
+      "Brightness": "200 cd/m²",
+      "Connectivity": "Tuner/HDMI/AV/USB/Headphones/Coaxial"
+    }
   }
 ];
 
