@@ -34,6 +34,7 @@ export function ProductFilters({
     "Stereo Systems",
     "Multimedia Systems",
     "Television",
+    "Public Address",
   ];
   const brands = ["MI+"];
 
