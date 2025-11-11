@@ -450,7 +450,7 @@ export const allProducts = [
   },
   {
     id: 38,
-    name: "MIL401gi",
+    name: "MIL401",
     image: "/product img/product img/2.1 Home Theater MIL401.jpg",
     rating: 4.4,
     reviews: 23,

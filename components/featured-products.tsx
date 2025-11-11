@@ -12,7 +12,7 @@ export function FeaturedProducts() {
   const featuredProducts = [
     {
       id: 1,
-      name: "MIL6080 Premium Home Theater System",
+      name: "MIL6080",
       image: "/images/products/mil6080.png",
       rating: 4.8,
       reviews: 124,
@@ -20,7 +20,7 @@ export function FeaturedProducts() {
     },
     {
       id: 5,
-      name: "MIL6090 RGB Gaming Audio System",
+      name: "MIL6090",
       image: "/images/products/mil6090.jpg",
       rating: 4.9,
       reviews: 89,
@@ -28,7 +28,7 @@ export function FeaturedProducts() {
     },
     {
       id: 8,
-      name: "MIL6060 Colorful LED Audio System",
+      name: "MIL6060",
       image: "/images/products/mil6060.png",
       rating: 4.7,
       reviews: 156,
@@ -36,7 +36,7 @@ export function FeaturedProducts() {
     },
     {
       id: 7,
-      name: "MILS505 Soundbar Collection",
+      name: "MILS505",
       image: "/images/products/mils505.jpg",
       rating: 4.6,
       reviews: 203,
