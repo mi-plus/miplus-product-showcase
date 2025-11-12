@@ -1503,9 +1503,9 @@ const products = [
     id: 54,
     name: "MI-D26S19C",
     images: [
-      "/TV/TV/MI-A23S195.png",
-      "/TV/TV/MI-A23S195.png",
-      "/TV/TV/MI-A23S195.png",
+      "/images/products/tely.jpg",
+      "/images/products/tely.jpg",
+      "/images/products/tely.jpg",
     ],
     category: "Television",
     brand: "MI+",

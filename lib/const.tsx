@@ -627,7 +627,7 @@ export const allProducts = [
   {
     id: 54,
     name: "MI-D26S19C",
-    image: "/TV/TV/MI-A23S195.png",
+    image: "/images/products/tely.jpg",
     rating: 4.2,
     reviews: 36,
     category: "Television",
