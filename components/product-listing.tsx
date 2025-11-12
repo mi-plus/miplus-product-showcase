@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Filter, Grid, List, ChevronLeft, ChevronRight } from "lucide-react";
 import { allProducts } from "@/lib/const";
 import { AnimatePresence, motion } from "framer-motion";
+import { getAvailableSeries, filterProductsBySeries } from "@/lib/product-series";
 
 const PRODUCTS_PER_PAGE = 12;
 
@@ -23,9 +24,10 @@ export function ProductListing() {
   });
   const [sortBy, setSortBy] = useState("name");
   const [searchQuery, setSearchQuery] = useState("");
+  const availableSeries = getAvailableSeries(allProducts);
 
   const filteredProducts = useMemo(() => {
-    const filtered = allProducts.filter((product) => {
+    let filtered = allProducts.filter((product) => {
       // Search filter
       if (
         searchQuery &&
@@ -62,6 +64,7 @@ export function ProductListing() {
 
       return true;
     });
+    filtered = filterProductsBySeries(filtered, sortBy);
 
     filtered.sort((a, b) => {
       switch (sortBy) {
@@ -140,7 +143,7 @@ export function ProductListing() {
         </div>
 
         <div className="flex items-center gap-4">
-          <ProductSort sortBy={sortBy} onSortChange={handleSortChange} />
+          <ProductSort sortBy={sortBy} onSortChange={handleSortChange} availableSeries={availableSeries} />
           <div className="flex items-center border border-gray-200 rounded-lg">
             <Button
               variant={viewMode === "grid" ? "default" : "ghost"}

@@ -5,9 +5,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 interface ProductSortProps {
   sortBy: string
   onSortChange: (value: string) => void
+  availableSeries: string[]
 }
 
-export function ProductSort({ sortBy, onSortChange }: ProductSortProps) {
+export function ProductSort({ sortBy, onSortChange, availableSeries }: ProductSortProps) {
   return (
     <div className="flex items-center gap-2">
       <span className="font-body text-sm text-mi-secondary whitespace-nowrap">Sort by:</span>
@@ -19,7 +20,12 @@ export function ProductSort({ sortBy, onSortChange }: ProductSortProps) {
           <SelectItem value="name">Name</SelectItem>
           <SelectItem value="rating">Highest Rated</SelectItem>
           <SelectItem value="reviews">Most Reviews</SelectItem>
-          <SelectItem value="category">Category</SelectItem>
+          {/* Add series filtering options */}
+          {availableSeries.map(series => (
+            <SelectItem key={series} value={`series-${series}`}>
+              MI-{series} Series
+            </SelectItem>
+          ))}
         </SelectContent>
       </Select>
     </div>

@@ -10,7 +10,7 @@ import { Star } from "lucide-react"
 const relatedProducts = [
   {
     id: 1,
-    name: "MIL6080 Premium Home Theater System",
+    name: "MIL6080",
     image: "/images/products/mil6080.png",
     rating: 4.8,
     reviews: 124,
@@ -18,7 +18,7 @@ const relatedProducts = [
   },
   {
     id: 2,
-    name: "MIL6020B Digital Home Theater System",
+    name: "MIL6020B",
     image: "/images/products/mil6020b.jpg",
     rating: 4.7,
     reviews: 98,
@@ -26,7 +26,7 @@ const relatedProducts = [
   },
   {
     id: 3,
-    name: "MILA4012 Compact Stereo System",
+    name: "MILA4012",
     image: "/images/products/mila4012.jpg",
     rating: 4.6,
     reviews: 156,
@@ -34,7 +34,7 @@ const relatedProducts = [
   },
   {
     id: 4,
-    name: "MIL6090 RGB Gaming Audio System",
+    name: "MIL6090",
     image: "/images/products/mil6090.jpg",
     rating: 4.9,
     reviews: 203,
@@ -42,7 +42,7 @@ const relatedProducts = [
   },
   {
     id: 5,
-    name: "MIL6010B Blue LED Home Theater",
+    name: "MIL6010B",
     image: "/images/products/mil6010b.jpg",
     rating: 4.5,
     reviews: 78,
@@ -50,7 +50,7 @@ const relatedProducts = [
   },
   {
     id: 6,
-    name: "MILS505 Soundbar Collection",
+    name: "MILS505",
     image: "/images/products/mils505.jpg",
     rating: 4.7,
     reviews: 145,

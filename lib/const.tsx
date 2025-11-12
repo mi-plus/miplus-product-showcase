@@ -450,7 +450,7 @@ export const allProducts = [
   },
   {
     id: 38,
-    name: "MIL401gi",
+    name: "MIL401",
     image: "/product img/product img/2.1 Home Theater MIL401.jpg",
     rating: 4.4,
     reviews: 23,
@@ -627,7 +627,7 @@ export const allProducts = [
   {
     id: 54,
     name: "MI-D26S19C",
-    image: "/TV/TV/MI-A23S195.png",
+    image: "/images/products/tely.jpg",
     rating: 4.2,
     reviews: 36,
     category: "Television",
